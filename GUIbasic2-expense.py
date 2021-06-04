@@ -21,14 +21,18 @@ filemenu.add_command(label='Export to Googlesheet')
 def Abount():
     messagebox.showinfo('Abount','สวัสดีครับ โปรแกรมนี้คือโปรแกรมบันทึกข้อมูล\nสนใจบริจาคเราไหม? ขอ 1 BTC ก็พอแล้ว\nBTC Address:abc')
 
+
 helpmenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Help',menu=helpmenu)
 helpmenu.add_command(label='Abount',command=Abount)
 
+def Donate():
+    messagebox.showinfo('Donate','XRP Address:rpXTzCuXtjiPDFysxq8uNmtZBe9Xo97JbW\nXRP Deposit Tag:1023997855')    
+
 
 donatemenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Donate',menu=donatemenu)
-
+donatemenu.add_command(label='Donate',command=Donate)
 
 
 
