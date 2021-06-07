@@ -5,7 +5,7 @@ import csv
 from datetime import datetime
 
 GUI = Tk()
-GUI.title('โปรแกรมบันทึกค่าใช้จ่าย by Nakin')
+GUI.title('โปรแกรมบันทึกค่าใช้จ่าย V.1.0 by Nakin')
 GUI.geometry('700x900+600+0')
 
 # ---------------MENU-------------------
@@ -19,6 +19,7 @@ filemenu.add_command(label='Import csv')
 filemenu.add_command(label='Export to Googlesheet')
 
 def Abount():
+    print('Abount Menu')
     messagebox.showinfo('Abount','สวัสดีครับ โปรแกรมนี้คือโปรแกรมบันทึกข้อมูล\nสนใจบริจาคเราไหม? ขอ 1 BTC ก็พอแล้ว\nBTC Address:abc')
 
 
